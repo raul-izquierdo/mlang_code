@@ -1,0 +1,25 @@
+CATEGORIES
+type;
+statement;
+expression;
+
+NODES
+program -> varDefinition* statement*;
+
+varDefinition -> type string;
+
+intType:type -> ;
+floatType:type -> ;
+
+print:statement -> expression;
+assignment:statement -> left:expression right:expression;
+
+arithmetic:expression -> left:expression operator:string right:expression;
+variable:expression -> string;
+intLiteral:expression -> int;
+floatLiteral:expression -> float;
+
+// -----------------------
+ATTRIBUTE GRAMMAR Identification
+
+variable -> varDefinition;

@@ -1,0 +1,7 @@
+DATA
+	float price;
+	int price;	// Error: redefined variable
+
+CODE
+	print price;
+	print value;	// Error: undefined variable

@@ -1,0 +1,126 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstPrinter</title>
+    <style type="text/css">
+        .vgen-body {
+            font-family: monospace;
+            color: #404040;
+        }
+        .vgen-div {
+            white-space: pre;
+        }
+        .vgen-tabs {
+            color: #96c0d9;
+        }
+        .vgen-child-name {
+            color: #2A5873;
+        }
+        .vgen-attribute-phase-0 {
+            color: #04ab04ff;
+        }
+        .vgen-attribute-phase-1 {
+            color: #ab0479ff;
+        }
+        .vgen-attribute-phase-2 {
+            color: #abab04ff;
+        }
+        .vgen-unknown-field {
+            color: grey;
+        }
+        .vgen-type {
+            color: #A7CADF;
+        }
+        .vgen-value {
+            color: #D6630E;
+        }
+        .vgen-dots {
+            color: #7BB0CF;
+        }
+        .vgen-pos {
+            color: #7BB0CF;
+        }
+        .vgen-nonNodeSourceText {
+        }
+        .vgen-nodeSourceText {
+            background-color: #d7f9d6;
+            border-radius: 4px;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+        .vgen-omittedSourceText {
+            color: #a6f2a4ff;
+        }
+        .vgen-null {
+            color: white;
+            background-color: #c7655b;
+            border-radius: 7px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="vgen-body">
+<div><span class="vgen-child-name">Program</span> = </div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;</span><span class="vgen-child-name">varDefinitions</span><span class="vgen-type"> List&lt;VarDefinition&gt;</span> =</div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">0</span>: <span class="vgen-type">VarDefinition</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[2:8 2:9]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">float </span><span class="vgen-nodeSourceText">f</span><span class="vgen-nonNodeSourceText">;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">type</span> <span class="vgen-type">FloatType</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[<span class="vgen-null">null</span> <span class="vgen-null">null</span>]&nbsp;&nbsp;&nbsp;</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">name</span> = <span class="vgen-value">"f"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">1</span>: <span class="vgen-type">VarDefinition</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[3:6 3:7]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">int </span><span class="vgen-nodeSourceText">i</span><span class="vgen-nonNodeSourceText">;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">type</span> <span class="vgen-type">IntType</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[<span class="vgen-null">null</span> <span class="vgen-null">null</span>]&nbsp;&nbsp;&nbsp;</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">name</span> = <span class="vgen-value">"i"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;</span><span class="vgen-child-name">statements</span><span class="vgen-type"> List&lt;Statement&gt;</span> =</div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">0</span>: <span class="vgen-type">Assignment</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[6:2 6:9]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText"></span><span class="vgen-nodeSourceText">i = 2.0</span><span class="vgen-nonNodeSourceText">;	// Error</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">left</span> <span class="vgen-type">Variable</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[6:2 6:3]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText"></span><span class="vgen-nodeSourceText">i</span><span class="vgen-nonNodeSourceText"> = 2.0;	// Error</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">name</span> = <span class="vgen-value">"i"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-0">varDefinition</span> = <span class="vgen-value">VarDefinition{ type=IntType{} name=i}</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">type</span> = <span class="vgen-value">IntType{}</span><span class="vgen-type">  Type</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">lvalue</span> = <span class="vgen-value">true</span><span class="vgen-type">  boolean</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">right</span> <span class="vgen-type">FloatLiteral</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[6:6 6:9]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">i = </span><span class="vgen-nodeSourceText">2.0</span><span class="vgen-nonNodeSourceText">;	// Error</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">floatValue</span> = <span class="vgen-value">2.0</span><span class="vgen-type">  float</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">type</span> = <span class="vgen-value">FloatType{}</span><span class="vgen-type">  Type</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">lvalue</span> = <span class="vgen-value">false</span><span class="vgen-type">  boolean</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">1</span>: <span class="vgen-type">Assignment</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[7:2 7:7]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText"></span><span class="vgen-nodeSourceText">f = 2</span><span class="vgen-nonNodeSourceText">;		// Error</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">left</span> <span class="vgen-type">Variable</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[7:2 7:3]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText"></span><span class="vgen-nodeSourceText">f</span><span class="vgen-nonNodeSourceText"> = 2;		// Error</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">name</span> = <span class="vgen-value">"f"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-0">varDefinition</span> = <span class="vgen-value">VarDefinition{ type=FloatType{} name=f}</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">type</span> = <span class="vgen-value">FloatType{}</span><span class="vgen-type">  Type</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">lvalue</span> = <span class="vgen-value">true</span><span class="vgen-type">  boolean</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">right</span> <span class="vgen-type">IntLiteral</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[7:6 7:7]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">f = </span><span class="vgen-nodeSourceText">2</span><span class="vgen-nonNodeSourceText">;		// Error</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">intValue</span> = <span class="vgen-value">2</span><span class="vgen-type">  int</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">type</span> = <span class="vgen-value">IntType{}</span><span class="vgen-type">  Type</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">lvalue</span> = <span class="vgen-value">false</span><span class="vgen-type">  boolean</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">2</span>: <span class="vgen-type">Print</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[8:8 8:15]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">print </span><span class="vgen-nodeSourceText">1 + 2.5</span><span class="vgen-nonNodeSourceText">;	// Error</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">expression</span> <span class="vgen-type">Arithmetic</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[8:8 8:15]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">print </span><span class="vgen-nodeSourceText">1 + 2.5</span><span class="vgen-nonNodeSourceText">;	// Error</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">left</span> <span class="vgen-type">IntLiteral</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[8:8 8:9]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">print </span><span class="vgen-nodeSourceText">1</span><span class="vgen-nonNodeSourceText"> + 2.5;	// Error</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">intValue</span> = <span class="vgen-value">1</span><span class="vgen-type">  int</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">type</span> = <span class="vgen-value">IntType{}</span><span class="vgen-type">  Type</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">lvalue</span> = <span class="vgen-value">false</span><span class="vgen-type">  boolean</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">operator</span> = <span class="vgen-value">"+"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">right</span> <span class="vgen-type">FloatLiteral</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[8:12 8:15]&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">print 1 + </span><span class="vgen-nodeSourceText">2.5</span><span class="vgen-nonNodeSourceText">;	// Error</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">floatValue</span> = <span class="vgen-value">2.5</span><span class="vgen-type">  float</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">type</span> = <span class="vgen-value">FloatType{}</span><span class="vgen-type">  Type</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">lvalue</span> = <span class="vgen-value">false</span><span class="vgen-type">  boolean</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">type</span> = <span class="vgen-value">IntType{}</span><span class="vgen-type">  Type</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">lvalue</span> = <span class="vgen-value">false</span><span class="vgen-type">  boolean</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">3</span>: <span class="vgen-type">Assignment</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[9:2 9:7]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText"></span><span class="vgen-nodeSourceText">2 = i</span><span class="vgen-nonNodeSourceText">;			// Error (but not a type error)</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">left</span> <span class="vgen-type">IntLiteral</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[9:2 9:3]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText"></span><span class="vgen-nodeSourceText">2</span><span class="vgen-nonNodeSourceText"> = i;			// Error (but not a type error)</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">intValue</span> = <span class="vgen-value">2</span><span class="vgen-type">  int</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">type</span> = <span class="vgen-value">IntType{}</span><span class="vgen-type">  Type</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">lvalue</span> = <span class="vgen-value">false</span><span class="vgen-type">  boolean</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">right</span> <span class="vgen-type">Variable</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[9:6 9:7]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">2 = </span><span class="vgen-nodeSourceText">i</span><span class="vgen-nonNodeSourceText">;			// Error (but not a type error)</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">name</span> = <span class="vgen-value">"i"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-0">varDefinition</span> = <span class="vgen-value">VarDefinition{ type=IntType{} name=i}</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">type</span> = <span class="vgen-value">IntType{}</span><span class="vgen-type">  Type</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-attribute-phase-1">lvalue</span> = <span class="vgen-value">true</span><span class="vgen-type">  boolean</span></div>
+</div>
+
+</body>
+</html>
+

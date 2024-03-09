@@ -1,0 +1,39 @@
+
+# Generate classes in the project sources folder
+--src-dir "src"
+# Default value: --src-dir "vgen.output/src"
+
+
+
+# The following options are assigned their default value. So they could be deleted and those options would have the same values (written just as a remainder of their values).
+
+
+# --------------------------------
+# Target parser (ANTLR o NEUTRAL)
+
+--target "ANTLR4"
+
+--skip-confirmation
+
+# --------------------------------
+# Packages for generated Java classes
+
+--ast-package "ast"
+
+--visitor-package "visitor"
+
+
+# --------------------------------
+# Directories in which to generate the files
+
+--antlr-dir "vgen.output/skeleton.antlr"
+
+--specs-dir "vgen.output/skeletons.specifications"
+
+--attgrammars-dir "vgen.output/skeletons.attgrammars"
+
+--codefuncs-dir "vgen.output/skeletons.codefunctions"
+
+--visitor-skeleton-dir "vgen.output/skeleton.visitor"
+
+--uml-dir "vgen.output/uml"

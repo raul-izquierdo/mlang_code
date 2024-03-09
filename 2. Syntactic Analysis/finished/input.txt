@@ -1,0 +1,7 @@
+DATA
+    float price;
+    int width;
+
+CODE
+    width = 25 * (2 + 1);
+    print width / 2;

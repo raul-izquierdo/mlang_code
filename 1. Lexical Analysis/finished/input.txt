@@ -1,0 +1,13 @@
+// One-line comment
+
+/*
+ Multi-line comment
+ */
+
+DATA
+	float price;
+	int width;
+
+CODE
+	price = (width - 3.0) * 1.18;
+	print price + 2 / 5;

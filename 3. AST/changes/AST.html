@@ -1,0 +1,111 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstPrinter</title>
+    <style type="text/css">
+        .vgen-body {
+            font-family: monospace;
+            color: #404040;
+        }
+        .vgen-div {
+            white-space: pre;
+        }
+        .vgen-tabs {
+            color: #96c0d9;
+        }
+        .vgen-child-name {
+            color: #2A5873;
+        }
+        .vgen-attribute-phase-0 {
+            color: #04ab04ff;
+        }
+        .vgen-attribute-phase-1 {
+            color: #ab0479ff;
+        }
+        .vgen-attribute-phase-2 {
+            color: #abab04ff;
+        }
+        .vgen-unknown-field {
+            color: grey;
+        }
+        .vgen-type {
+            color: #A7CADF;
+        }
+        .vgen-value {
+            color: #D6630E;
+        }
+        .vgen-dots {
+            color: #7BB0CF;
+        }
+        .vgen-pos {
+            color: #7BB0CF;
+        }
+        .vgen-nonNodeSourceText {
+        }
+        .vgen-nodeSourceText {
+            background-color: #d7f9d6;
+            border-radius: 4px;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+        .vgen-omittedSourceText {
+            color: #a6f2a4ff;
+        }
+        .vgen-null {
+            color: white;
+            background-color: #c7655b;
+            border-radius: 7px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="vgen-body">
+<div><span class="vgen-child-name">Program</span> = </div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;</span><span class="vgen-child-name">varDefinitions</span><span class="vgen-type"> List&lt;VarDefinition&gt;</span> =</div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">0</span>: <span class="vgen-type">VarDefinition</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[2:11 2:16]&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">float </span><span class="vgen-nodeSourceText">price</span><span class="vgen-nonNodeSourceText">;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">type</span> <span class="vgen-type">FloatType</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[<span class="vgen-null">null</span> <span class="vgen-null">null</span>]&nbsp;&nbsp;&nbsp;</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">name</span> = <span class="vgen-value">"price"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">1</span>: <span class="vgen-type">VarDefinition</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[3:9 3:14]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">int </span><span class="vgen-nodeSourceText">width</span><span class="vgen-nonNodeSourceText">;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">type</span> <span class="vgen-type">IntType</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[<span class="vgen-null">null</span> <span class="vgen-null">null</span>]&nbsp;&nbsp;&nbsp;</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">name</span> = <span class="vgen-value">"width"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;</span><span class="vgen-child-name">statements</span><span class="vgen-type"> List&lt;Statement&gt;</span> =</div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">0</span>: <span class="vgen-type">Assignment</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[6:5 6:24]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText"></span><span class="vgen-nodeSourceText">width = 25 * (2 + 1</span><span class="vgen-nonNodeSourceText">);</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">left</span> <span class="vgen-type">Variable</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[6:5 6:10]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText"></span><span class="vgen-nodeSourceText">width</span><span class="vgen-nonNodeSourceText"> = 25 * (2 + 1);</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">name</span> = <span class="vgen-value">"width"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">right</span> <span class="vgen-type">Arithmetic</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[6:13 6:24]&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">width = </span><span class="vgen-nodeSourceText">25 * (2 + 1</span><span class="vgen-nonNodeSourceText">);</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">left</span> <span class="vgen-type">IntLiteral</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[6:13 6:15]&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">width = </span><span class="vgen-nodeSourceText">25</span><span class="vgen-nonNodeSourceText"> * (2 + 1);</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">intValue</span> = <span class="vgen-value">25</span><span class="vgen-type">  int</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">operator</span> = <span class="vgen-value">"*"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">right</span> <span class="vgen-type">Arithmetic</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[6:19 6:24]&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">width = 25 * (</span><span class="vgen-nodeSourceText">2 + 1</span><span class="vgen-nonNodeSourceText">);</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">left</span> <span class="vgen-type">IntLiteral</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[6:19 6:20]&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">width = 25 * (</span><span class="vgen-nodeSourceText">2</span><span class="vgen-nonNodeSourceText"> + 1);</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">intValue</span> = <span class="vgen-value">2</span><span class="vgen-type">  int</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">operator</span> = <span class="vgen-value">"+"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">right</span> <span class="vgen-type">IntLiteral</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[6:23 6:24]&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">width = 25 * (2 + </span><span class="vgen-nodeSourceText">1</span><span class="vgen-nonNodeSourceText">);</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">intValue</span> = <span class="vgen-value">1</span><span class="vgen-type">  int</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">1</span>: <span class="vgen-type">Print</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[7:11 7:16]&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">print </span><span class="vgen-nodeSourceText">width</span><span class="vgen-nonNodeSourceText">;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">expression</span> <span class="vgen-type">Variable</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[7:11 7:16]&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">print </span><span class="vgen-nodeSourceText">width</span><span class="vgen-nonNodeSourceText">;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">name</span> = <span class="vgen-value">"width"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">2</span>: <span class="vgen-type">Assignment</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[9:5 9:16]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText"></span><span class="vgen-nodeSourceText">price = 5.0</span><span class="vgen-nonNodeSourceText">;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">left</span> <span class="vgen-type">Variable</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[9:5 9:10]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText"></span><span class="vgen-nodeSourceText">price</span><span class="vgen-nonNodeSourceText"> = 5.0;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">name</span> = <span class="vgen-value">"price"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">right</span> <span class="vgen-type">FloatLiteral</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[9:13 9:16]&nbsp;&nbsp;&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">price = </span><span class="vgen-nodeSourceText">5.0</span><span class="vgen-nonNodeSourceText">;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">floatValue</span> = <span class="vgen-value">5.0</span><span class="vgen-type">  float</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">3</span>: <span class="vgen-type">Print</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[10:11 10:22]&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">print </span><span class="vgen-nodeSourceText">price / 2.0</span><span class="vgen-nonNodeSourceText">;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">expression</span> <span class="vgen-type">Arithmetic</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[10:11 10:22]&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">print </span><span class="vgen-nodeSourceText">price / 2.0</span><span class="vgen-nonNodeSourceText">;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">left</span> <span class="vgen-type">Variable</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . . . .</span><span class="vgen-pos">[10:11 10:16]&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">print </span><span class="vgen-nodeSourceText">price</span><span class="vgen-nonNodeSourceText"> / 2.0;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">name</span> = <span class="vgen-value">"price"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">operator</span> = <span class="vgen-value">"/"</span><span class="vgen-type">  string</span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;</span><span class="vgen-child-name">right</span> <span class="vgen-type">FloatLiteral</span> =<span class="vgen-dots"> . . . . . . . . . . . . . . . . . . . . . </span><span class="vgen-pos">[10:19 10:22]&nbsp;</span><span class="vgen-sourceText"><span class="vgen-nonNodeSourceText">print price / </span><span class="vgen-nodeSourceText">2.0</span><span class="vgen-nonNodeSourceText">;</span></span></div>
+<div><span class="vgen-tabs">|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;.&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="vgen-child-name">floatValue</span> = <span class="vgen-value">2.0</span><span class="vgen-type">  float</span></div>
+</div>
+
+</body>
+</html>
+

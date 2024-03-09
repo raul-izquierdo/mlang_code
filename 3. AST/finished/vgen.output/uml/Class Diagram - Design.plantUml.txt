@@ -1,0 +1,90 @@
+' Generated with VGen 2.0.0
+
+@startuml
+
+class Position {
+    +int getLine()
+    +int getColumn()
+    +boolean lessThan(Position other)
+    +boolean greaterThan(Position other)
+}
+
+interface AST {
+    +updatePositions(Object... children)
+    +updatePositions(Position start, Position end)
+    +Object accept(Visitor visitor, Object param)
+}
+
+AST *-[#404040,thickness=1]- Position : start >
+AST *-[#404040,thickness=1]- Position : end >
+
+
+interface Expression {
+}
+AST <|-[#808080]- Expression
+
+interface Statement {
+}
+AST <|-[#808080]- Statement
+
+interface Type {
+}
+AST <|-[#808080]- Type
+
+interface AST {
+}
+
+class Program {
+}
+AST <|-[#808080]- Program
+Program o-[#404040,thickness=2]- "✱" VarDefinition : varDefinitions >
+Program o-[#404040,thickness=2]- "✱" Statement : statements >
+
+class VarDefinition {
+	+String name
+}
+AST <|-[#808080]- VarDefinition
+VarDefinition o-[#404040,thickness=2]-  Type : type >
+
+class IntType {
+}
+Type <|-[#808080]- IntType
+
+class FloatType {
+}
+Type <|-[#808080]- FloatType
+
+class Print {
+}
+Statement <|-[#808080]- Print
+Print o-[#404040,thickness=2]-  Expression : expression >
+
+class Assignment {
+}
+Statement <|-[#808080]- Assignment
+Assignment o-[#404040,thickness=2]-  Expression : left >
+Assignment o-[#404040,thickness=2]-  Expression : right >
+
+class Arithmetic {
+	+String operator
+}
+Expression <|-[#808080]- Arithmetic
+Arithmetic o-[#404040,thickness=2]-  Expression : left >
+Arithmetic o-[#404040,thickness=2]-  Expression : right >
+
+class Variable {
+	+String name
+}
+Expression <|-[#808080]- Variable
+
+class IntLiteral {
+	+int intValue
+}
+Expression <|-[#808080]- IntLiteral
+
+class FloatLiteral {
+	+float floatValue
+}
+Expression <|-[#808080]- FloatLiteral
+
+@enduml
