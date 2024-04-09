@@ -17,7 +17,7 @@ public class MemoryAllocation extends DefaultVisitor {
 
         for (var varDefinition : program.getVarDefinitions()) {
 
-            varDefinition.accept(this, param);
+            // varDefinition.accept(this, param);
 
             varDefinition.setAddress(currentAddress);
             currentAddress += varDefinition.getType().getSize();
